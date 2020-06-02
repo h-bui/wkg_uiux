@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <myheader></myheader>
-    <img src="./assets/logo.png">
     <router-view/>
-    <button class="btn btn-primary">test</button>
   </div>
 </template>
 
@@ -13,7 +11,11 @@ import myheader from './components/header'
 export default {
   name: 'App',
   components: {
-    myheader
+    myheader,
+    'icon': {
+      template: '<svg><use :xlink:href="use"/></svg>',
+      props: ['use']
+    }
   }
 }
 </script>
