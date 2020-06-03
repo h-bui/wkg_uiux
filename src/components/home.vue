@@ -8,7 +8,7 @@
           :class="{
             'nav__label--active' : active,
             'nav__label--filter': activeFilters[menu].length
-          }" click="setMenu(menu, active)" :key="menu">
+          }" @click="setMenu(menu, active)" :key="(active, menu)">
           {{ menu }}
         </li>
 

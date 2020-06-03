@@ -1,5 +1,5 @@
 <template>
-    <h1>test1</h1>
+    <h1>{{ msg }}</h1>
 </template>
 
 <script>
@@ -7,7 +7,7 @@ export default {
   name: 'test1',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'List all recipe'
     }
   }
 }
