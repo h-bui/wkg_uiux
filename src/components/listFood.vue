@@ -20,14 +20,14 @@
       <menu v-for="(options, filter) in filters" class="filters"
         v-show="menus[filter]" ref="menu" :key="(options, filter)">
 
-        <li v-if="filter === 'rating'" class="filters__rating">
+        <li v-if="filter === 'calories'" class="filters__calories">
           <output>
-            <label>Minimum rating:&nbsp;</label>
-            {{ parseFloat(filters.rating).toFixed(1) }}
+            <label>Calories:&nbsp;</label>
+            {{ parseFloat(filters.calories).toFixed(1) }}
           </output>
 
-          <input v-model="filters.rating" class="filters__range" type="range"
-            :min="rating.min" :max="rating.max" step="0.1"/>
+          <input v-model="filters.calories" class="filters__range" type="range"
+            :min="calories.min" :max="calories.max" step="0.1"/>
         </li>
 
         <template v-else>
@@ -43,7 +43,7 @@
     <transition-group name="company" tag="ul" class="content__list">
       <li class="company" v-for="company in list" :key="company.id">
         <div class="company__info">
-          <icon-food class="company__logo" :use="images[company.logo_food]"></icon-food>
+          <icon-food class="company__logo" :use="images[company.logo]"></icon-food>
           <h2 class="company__name">{{ company.name }}</h2>
         </div>
 
@@ -58,7 +58,7 @@
 
           <li class="company__data">
             <label class="company__label">カロリ</label>
-            <p class="company__rating">{{ company.rating.toFixed(1) }}</p>
+            <p class="company__calories">{{ company.calories.toFixed(1) }}</p>
           </li>
         </ul>
       </li>
@@ -86,9 +86,9 @@ export default {
       modal: false,
       companies: [],
       dropdown: { height: 0 },
-      rating: { min: 10, max: 0 },
-      filters: { foodType: {}, categories: {}, rating: 0 },
-      menus: { foodType: false, categories: false, rating: false },
+      calories: { min: 10, max: 0 },
+      filters: { foodType: {}, categories: {}, calories: 0 },
+      menus: { foodType: false, categories: false, calories: false },
       images: {
         'logo': require('../assets/logo.png'),
         'hamburger': require('../assets/hamburger.png'),
@@ -99,15 +99,14 @@ export default {
 
   computed: {
     activeMenu () {
-      console.log(this.menus)
       return Object.keys(this.menus).reduce(($$, set, i) => (this.menus[set]) ? i : $$, -1)
     },
 
     list () {
       let { foodType, categories } = this.activeFilters
 
-      return this.companies.filter(({ country, keywords, rating }) => {
-        if (rating < this.filters.rating) return false
+      return this.companies.filter(({ country, keywords, calories }) => {
+        if (calories < this.filters.calories) return false
         if (foodType.length && !~foodType.indexOf(country)) return false
         return !categories.length || categories.every(cat => ~keywords.indexOf(cat))
       })
@@ -119,7 +118,7 @@ export default {
       return {
         foodType: Object.keys(foodType).filter(c => foodType[c]),
         categories: Object.keys(categories).filter(c => categories[c]),
-        rating: (this.filters.rating > this.rating.min) ? [this.filters.rating] : []
+        calories: (this.filters.calories > this.calories.min) ? [this.filters.calories] : []
       }
     }
   },
@@ -150,8 +149,8 @@ export default {
     },
 
     clearFilter (filter, except, active) {
-      if (filter === 'rating') {
-        this.filters[filter] = this.rating.min
+      if (filter === 'calories') {
+        this.filters[filter] = this.calories.min
       } else {
         Object.keys(this.filters[filter]).forEach(option => {
           this.filters[filter][option] = except === option && !active
@@ -173,13 +172,13 @@ export default {
   beforeMount () {
     this.companies = foodData
 
-    foodData.forEach(({ country, keywords, rating }) => {
+    foodData.forEach(({ country, keywords, calories }) => {
       this.$set(this.filters.foodType, country, false)
 
-      if (this.rating.max < rating) this.rating.max = rating
-      if (this.rating.min > rating) {
-        this.rating.min = rating
-        this.filters.rating = rating
+      if (this.calories.max < calories) this.calories.max = calories
+      if (this.calories.min > calories) {
+        this.calories.min = calories
+        this.filters.calories = calories
       }
 
       keywords.forEach(category => {
@@ -409,7 +408,7 @@ input[type='range']::-webkit-slider-thumb {
 .company__label {
   font-size: 0.8rem;
 }
-.company__rating {
+.company__calories {
   text-align: center;
 }
 .company__info {
@@ -580,7 +579,7 @@ input[type='range']::-webkit-slider-thumb {
   border-color: #379a93;
   background-color: #379a93;
 }
-.filters__rating {
+.filters__calories {
   width: 100%;
   display: -webkit-box;
   display: flex;
