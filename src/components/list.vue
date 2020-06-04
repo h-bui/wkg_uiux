@@ -1,14 +1,41 @@
 <template>
+  <div>
     <h1>{{ msg }}</h1>
+    <!-- <img v-for="image in this.images" :src="image.url" :key="image.name"/> -->
+    <img :src="test['hamburger']" />
+    <img :src="test['apple']" contain height="100px" width="100px"/>
+  </div>
 </template>
 
 <script>
+import foodData from './foodResponse.json'
+
 export default {
-  name: 'test1',
+  name: 'list',
   data () {
     return {
-      msg: 'List all recipe'
+      msg: 'List all recipe',
+      images: [
+        {
+          url: require('../assets/logo.png'),
+          name: 'logo'
+        },
+        {
+          url: require('../assets/hamburger.png'),
+          name: 'hamburger'
+        }
+      ],
+      jsonData: foodData,
+      test: {
+        'logo': require('../assets/logo.png'),
+        'hamburger': require('../assets/hamburger.png'),
+        'apple': require('../assets/image/Apple.svg')
+      }
     }
+  },
+
+  beforeMount () {
+    console.log(foodData)
   }
 }
 </script>

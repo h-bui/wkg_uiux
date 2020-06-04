@@ -4,6 +4,7 @@ import BootstrapVue from 'bootstrap-vue'
 import Router from 'vue-router'
 import home from '@/components/home'
 import list from '@/components/list'
+import listFood from '@/components/listFood'
 
 Vue.use(Router)
 Vue.use(BootstrapVue)
@@ -22,6 +23,11 @@ export default new Router({
       path: '/list',
       name: 'list',
       component: list
+    },
+    {
+      path: '/listFood',
+      name: 'listFood',
+      component: listFood
     }
   ]
 })

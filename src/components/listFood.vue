@@ -1,5 +1,5 @@
 <template>
-  <div id="home" class="content">
+  <div id="listFood" class="content">
     <nav class="nav">
       <menu class="nav__controls">
         <icon class="nav__icon" use="#filter"></icon>
@@ -43,16 +43,15 @@
     <transition-group name="company" tag="ul" class="content__list">
       <li class="company" v-for="company in list" :key="company.id">
         <div class="company__info">
-          <icon class="company__logo" :style="`fill:${company.color}`" :use="company.logo"></icon>
+          <icon-food class="company__logo" :use="images[company.logo_food]"></icon-food>
           <h2 class="company__name">{{ company.name }}</h2>
-          <blockquote class="company__slogan">{{ company.slogan }}</blockquote>
         </div>
 
         <ul class="company__details">
           <li class="company__data">
             <label class="company__label">タイプ</label>
             <p class="company__country"
-              @click="clearFilter('countries', company.country)">
+              @click="clearFilter('foodType', company.country)">
               {{ company.country }}
             </p>
           </li>
@@ -68,11 +67,17 @@
 </template>
 
 <script>
+import foodData from './foodResponse.json'
+
 export default {
-  name: 'Home',
+  name: 'listFood',
   components: {
     'icon': {
       template: '<svg><use :xlink:href="use"/></svg>',
+      props: ['use']
+    },
+    'icon-food': {
+      template: '<img :src="use" contain height="150px" width="150px"/>',
       props: ['use']
     }
   },
@@ -82,31 +87,37 @@ export default {
       companies: [],
       dropdown: { height: 0 },
       rating: { min: 10, max: 0 },
-      filters: { countries: {}, categories: {}, rating: 0 },
-      menus: { countries: false, categories: false, rating: false }
+      filters: { foodType: {}, categories: {}, rating: 0 },
+      menus: { foodType: false, categories: false, rating: false },
+      images: {
+        'logo': require('../assets/logo.png'),
+        'hamburger': require('../assets/hamburger.png'),
+        'apple': require('../assets/image/Apple.svg')
+      }
     }
   },
 
   computed: {
     activeMenu () {
+      console.log(this.menus)
       return Object.keys(this.menus).reduce(($$, set, i) => (this.menus[set]) ? i : $$, -1)
     },
 
     list () {
-      let { countries, categories } = this.activeFilters
+      let { foodType, categories } = this.activeFilters
 
       return this.companies.filter(({ country, keywords, rating }) => {
         if (rating < this.filters.rating) return false
-        if (countries.length && !~countries.indexOf(country)) return false
+        if (foodType.length && !~foodType.indexOf(country)) return false
         return !categories.length || categories.every(cat => ~keywords.indexOf(cat))
       })
     },
 
     activeFilters () {
-      let { countries, categories } = this.filters
+      let { foodType, categories } = this.filters
 
       return {
-        countries: Object.keys(countries).filter(c => countries[c]),
+        foodType: Object.keys(foodType).filter(c => foodType[c]),
         categories: Object.keys(categories).filter(c => categories[c]),
         rating: (this.filters.rating > this.rating.min) ? [this.filters.rating] : []
       }
@@ -129,7 +140,7 @@ export default {
 
   methods: {
     setFilter (filter, option) {
-      if (filter === 'countries') {
+      if (filter === 'foodType') {
         this.filters[filter][option] = !this.filters[filter][option]
       } else {
         setTimeout(() => {
@@ -160,26 +171,21 @@ export default {
   },
 
   beforeMount () {
-    fetch('https://s3-us-west-2.amazonaws.com/s.cdpn.io/450744/mock-data.json')
-      .then(response => response.json())
-      .then(companies => {
-        console.log(companies)
-        this.companies = companies
+    this.companies = foodData
 
-        companies.forEach(({ country, keywords, rating }) => {
-          this.$set(this.filters.countries, country, false)
+    foodData.forEach(({ country, keywords, rating }) => {
+      this.$set(this.filters.foodType, country, false)
 
-          if (this.rating.max < rating) this.rating.max = rating
-          if (this.rating.min > rating) {
-            this.rating.min = rating
-            this.filters.rating = rating
-          }
+      if (this.rating.max < rating) this.rating.max = rating
+      if (this.rating.min > rating) {
+        this.rating.min = rating
+        this.filters.rating = rating
+      }
 
-          keywords.forEach(category => {
-            this.$set(this.filters.categories, category, false)
-          })
-        })
+      keywords.forEach(category => {
+        this.$set(this.filters.categories, category, false)
       })
+    })
   }
 }
 

@@ -1,0 +1,69 @@
+[
+	{
+    "id": "ef-4c43-d68",
+    "name": "Beef",
+    "country": "Meat",
+    "rating": 450,
+    "color": "#b7b583",
+    "slogan": "best-of-breed initiatives",
+    "logo": "#logo1",
+    "logo_food": "hamburger",
+    "keywords": ["meat", "best-comsume", "quick cook"]
+  },
+  {
+    "id": "ef-4c43-d68",
+    "name": "Pork",
+    "country": "Meat",
+    "rating": 250,
+    "color": "#b7b583",
+    "slogan": "best-of-breed initiatives",
+    "logo": "#logo1",
+    "logo_food": "hamburger",
+    "keywords": ["meat", "best-comsume", "quick cook"]
+  },
+  {
+    "id": "ef-4c43-d68",
+    "name": "Chicken",
+    "country": "Meat",
+    "rating": 300,
+    "color": "#b7b583",
+    "slogan": "best-of-breed initiatives",
+    "logo": "#logo1",
+    "logo_food": "hamburger",
+    "keywords": ["meat", "best-comsume", "quick cook"]
+  },
+  {
+    "id": "ef-4c43-d68",
+    "name": "Bread",
+    "country": "starch",
+    "rating": 120,
+    "color": "#b7b583",
+    "slogan": "best-of-breed initiatives",
+    "logo": "#logo1",
+    "logo_food": "hamburger",
+    "keywords": ["staple-food", "baking"]
+  },
+  {
+    "id": "ef-4c43-d68",
+    "name": "Apple",
+    "country": "fruits",
+    "rating": 60,
+    "color": "#b7b583",
+    "slogan": "best-of-breed initiatives",
+    "logo": "#logo1",
+    "logo_food": "apple",
+    "keywords": ["edible-plants", "natural"]
+  },
+  {
+    "id": "ef-4c43-d68",
+    "name": "Carror",
+    "country": "vegetables",
+    "rating": 40,
+    "color": "#b7b583",
+    "slogan": "best-of-breed initiatives",
+    "logo": "#logo1",
+    "logo_food": "apple",
+    "keywords": ["edible-plants", "natural"]
+  }
+
+]
