@@ -9,7 +9,7 @@
             'nav__label--active' : active,
             'nav__label--filter': activeFilters[menu].length
           }" @click="setMenu(menu, active)" :key="(active, menu)">
-          {{ menu }}
+          {{ menus_trans[menu] }}
         </li>
 
         <li class="nav__label nav__label--clear" @click="clearAllFilters">Clear all</li>
@@ -22,7 +22,7 @@
 
         <li v-if="filter === 'calories'" class="filters__calories">
           <output>
-            <label>Calories:&nbsp;</label>
+            <label>カロリー :&nbsp;</label>
             {{ parseFloat(filters.calories).toFixed(1) }}
           </output>
 
@@ -45,14 +45,15 @@
         <div class="company__info">
           <icon-food class="company__logo" :use="images[company.logo]"></icon-food>
           <h2 class="company__name">{{ company.name }}</h2>
+          <h3 class="company__standard-amount">目安量 {{ company.standard_amount }}</h3>
         </div>
 
         <ul class="company__details">
           <li class="company__data">
             <label class="company__label">タイプ</label>
-            <p class="company__country"
-              @click="clearFilter('foodType', company.country)">
-              {{ company.country }}
+            <p class="company__type"
+              @click="clearFilter('foodType', company.type)">
+              {{ company.type }}
             </p>
           </li>
 
@@ -89,10 +90,21 @@ export default {
       calories: { min: 10, max: 0 },
       filters: { foodType: {}, categories: {}, calories: 0 },
       menus: { foodType: false, categories: false, calories: false },
+      menus_trans: { foodType: '種類', categories: 'カテゴリ', calories: 'カロリー' },
       images: {
         'logo': require('../assets/logo.png'),
         'hamburger': require('../assets/hamburger.png'),
-        'apple': require('../assets/image/Apple.svg')
+        'apple': require('../assets/image/apple.svg'),
+        'rack_of_lamb': require('../assets/image/rack_of_lamb.svg'),
+        'birthday_cake': require('../assets/image/birthday_cake.svg'),
+        'eggs': require('../assets/image/eggs.svg'),
+        'banana': require('../assets/image/banana.svg'),
+        'bottle_of_water': require('../assets/image/bottle_of_water.svg'),
+        'fish': require('../assets/image/fish.svg'),
+        'peanuts': require('../assets/image/peanuts.svg'),
+        'konnyaku': require('../assets/image/konnyaku.jpg'),
+        'potato': require('../assets/image/potato.svg'),
+        'bread': require('../assets/image/bread.svg')
       }
     }
   },
@@ -105,9 +117,9 @@ export default {
     list () {
       let { foodType, categories } = this.activeFilters
 
-      return this.companies.filter(({ country, keywords, calories }) => {
+      return this.companies.filter(({ type, keywords, calories }) => {
         if (calories < this.filters.calories) return false
-        if (foodType.length && !~foodType.indexOf(country)) return false
+        if (foodType.length && !~foodType.indexOf(type)) return false
         return !categories.length || categories.every(cat => ~keywords.indexOf(cat))
       })
     },
@@ -172,8 +184,8 @@ export default {
   beforeMount () {
     this.companies = foodData
 
-    foodData.forEach(({ country, keywords, calories }) => {
-      this.$set(this.filters.foodType, country, false)
+    foodData.forEach(({ type, keywords, calories }) => {
+      this.$set(this.filters.foodType, type, false)
 
       if (this.calories.max < calories) this.calories.max = calories
       if (this.calories.min > calories) {
@@ -433,6 +445,12 @@ input[type='range']::-webkit-slider-thumb {
   font-weight: 400;
   text-transform: capitalize;
 }
+.company__standard-amount {
+  height: 2rem;
+  text-align: left;
+  font-weight: 300;
+  text-transform: capitalize;
+}
 .company__details {
   display: -webkit-box;
   display: flex;
@@ -443,7 +461,7 @@ input[type='range']::-webkit-slider-thumb {
   background-color: rgba(197, 208, 209, 0.1);
   border-top: 1px solid #c5d0d1;
 }
-.company__country:hover {
+.company__type:hover {
   text-decoration: underline;
   cursor: pointer;
 }

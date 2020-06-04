@@ -29,7 +29,7 @@ export default {
       test: {
         'logo': require('../assets/logo.png'),
         'hamburger': require('../assets/hamburger.png'),
-        'apple': require('../assets/image/Apple.svg')
+        'apple': require('../assets/image/apple.svg')
       }
     }
   },

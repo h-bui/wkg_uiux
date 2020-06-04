@@ -1,57 +1,1212 @@
 [
-	{
-    "id": "1",
-    "name": "Beef",
-    "country": "Meat",
-    "calories": 450,
+  {
+    "id": "0",
+    "name": "ご飯",
+    "type": "穀類",
+    "calories": 252,
     "color": "#b7b583",
-    "logo": "hamburger",
+    "logo": "bread",
+    "standard_amount": "１杯（150g）",
     "keywords": ["meat", "best-comsume", "quick cook"]
   },
   {
-    "id": "2",
-    "name": "Pork",
-    "country": "Meat",
-    "calories": 250,
+    "id": "1",
+    "name": "玄米ご飯",
+    "type": "穀類",
+    "calories": 248,
     "color": "#b7b583",
-    "logo": "hamburger",
+    "logo": "bread",
+    "standard_amount": "１杯（150g）",
     "keywords": ["meat", "best-comsume", "quick cook"]
   },
   {
     "id": "3",
-    "name": "Chicken",
-    "country": "Meat",
-    "calories": 300,
+    "name": "赤飯",
+    "type": "穀類",
+    "calories": 284,
     "color": "#b7b583",
-    "logo": "hamburger",
+    "logo": "bread",
+    "standard_amount": "１杯（150g）",
     "keywords": ["meat", "best-comsume", "quick cook"]
   },
   {
     "id": "4",
-    "name": "Bread",
-    "country": "starch",
-    "calories": 120,
+    "name": "おにぎり（梅干し）",
+    "type": "穀類",
+    "calories": 140,
     "color": "#b7b583",
-    "logo": "hamburger",
-    "keywords": ["staple-food", "baking"]
+    "logo": "bread",
+    "standard_amount": "１個（90g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
   },
   {
     "id": "5",
-    "name": "Apple",
-    "country": "fruits",
-    "calories": 60,
+    "name": "全粥",
+    "type": "穀類",
+    "calories": 178,
     "color": "#b7b583",
-    "logo": "apple",
-    "keywords": ["edible-plants", "natural"]
+    "logo": "bread",
+    "standard_amount": "１人前（250g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
   },
   {
     "id": "6",
-    "name": "Carror",
-    "country": "vegetables",
-    "calories": 40,
+    "name": "切り餅",
+    "type": "穀類",
+    "calories": 129,
     "color": "#b7b583",
-    "logo": "apple",
-    "keywords": ["edible-plants", "natural"]
+    "logo": "bread",
+    "standard_amount": "１個（角 55g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "7",
+    "name": "精白米",
+    "type": "穀類",
+    "calories": 534,
+    "color": "#b7b583",
+    "logo": "bread",
+    "standard_amount": "１合（150g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "8",
+    "name": "食パン",
+    "type": "穀類",
+    "calories": 156,
+    "color": "#b7b583",
+    "logo": "bread",
+    "standard_amount": "１枚（６枚切り 60g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "9",
+    "name": "クロワッサン",
+    "type": "穀類",
+    "calories": 178,
+    "color": "#b7b583",
+    "logo": "bread",
+    "standard_amount": "１個（40g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "10",
+    "name": "バターロール",
+    "type": "穀類",
+    "calories": 95,
+    "color": "#b7b583",
+    "logo": "bread",
+    "standard_amount": "１個（30g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "11",
+    "name": "フランスパン",
+    "type": "穀類",
+    "calories": 84,
+    "color": "#b7b583",
+    "logo": "bread",
+    "standard_amount": "１切（30g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "12",
+    "name": "そば（ゆで）",
+    "type": "穀類",
+    "calories": 224,
+    "color": "#b7b583",
+    "logo": "bread",
+    "standard_amount": "１玉（170g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "13",
+    "name": "そば（干し）",
+    "type": "穀類",
+    "calories": 344,
+    "color": "#b7b583",
+    "logo": "bread",
+    "standard_amount": "１束（100g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "14",
+    "name": "うどん（ゆで）",
+    "type": "穀類",
+    "calories": 231,
+    "color": "#b7b583",
+    "logo": "bread",
+    "standard_amount": "１玉（220g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "15",
+    "name": "うどん（干し）",
+    "type": "穀類",
+    "calories": 348,
+    "color": "#b7b583",
+    "logo": "bread",
+    "standard_amount": "１束（100g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "16",
+    "name": "中華めん（蒸し）",
+    "type": "穀類",
+    "calories": 297,
+    "color": "#b7b583",
+    "logo": "bread",
+    "standard_amount": "１玉（150g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "17",
+    "name": "そうめん（干し）",
+    "type": "穀類",
+    "calories": 178,
+    "color": "#b7b583",
+    "logo": "bread",
+    "standard_amount": "１束（50g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "19",
+    "name": "スパゲティ（乾燥）",
+    "type": "穀類",
+    "calories": 378,
+    "color": "#b7b583",
+    "logo": "bread",
+    "standard_amount": "１人分（100g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "20",
+    "name": "じゃがいも",
+    "type": "いも類",
+    "calories": 159,
+    "color": "#b7b583",
+    "logo": "potato",
+    "standard_amount": "中１個（50g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "21",
+    "name": "さつまいも",
+    "type": "いも類",
+    "calories": 39,
+    "color": "#b7b583",
+    "logo": "potato",
+    "standard_amount": "中１本（200g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "22",
+    "name": "長いも",
+    "type": "いも類",
+    "calories": 39,
+    "color": "#b7b583",
+    "logo": "potato",
+    "standard_amount": "１食分（60g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "23",
+    "name": "さといも",
+    "type": "いも類",
+    "calories": 29,
+    "color": "#b7b583",
+    "logo": "potato",
+    "standard_amount": "中１個（50g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "24",
+    "name": "えび芋",
+    "type": "いも類",
+    "calories": 243,
+    "color": "#b7b583",
+    "logo": "potato",
+    "standard_amount": "１個（M 250g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "25",
+    "name": "しらたき",
+    "type": "でんぷん類",
+    "calories": 12,
+    "color": "#b7b583",
+    "logo": "konnyaku",
+    "standard_amount": "１玉（200g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "26",
+    "name": "こんにゃく",
+    "type": "でんぷん類",
+    "calories": 14,
+    "color": "#b7b583",
+    "logo": "konnyaku",
+    "standard_amount": "１枚（250g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "27",
+    "name": "あずき（乾）",
+    "type": "豆類",
+    "calories": 68,
+    "color": "#b7b583",
+    "logo": "peanuts",
+    "standard_amount": "大さじ２（20g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "28",
+    "name": "大豆（乾）",
+    "type": "豆類",
+    "calories": 417,
+    "color": "#b7b583",
+    "logo": "peanuts",
+    "standard_amount": "100g",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "29",
+    "name": "大豆（ゆで）",
+    "type": "豆類",
+    "calories": 180,
+    "color": "#b7b583",
+    "logo": "peanuts",
+    "standard_amount": "100g",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "30",
+    "name": "絹ごし豆腐",
+    "type": "豆類",
+    "calories": 56,
+    "color": "#b7b583",
+    "logo": "peanuts",
+    "standard_amount": "100g",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "31",
+    "name": "木綿豆腐",
+    "type": "豆類",
+    "calories": 72,
+    "color": "#b7b583",
+    "logo": "peanuts",
+    "standard_amount": "100g",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "32",
+    "name": "厚揚げ",
+    "type": "豆類",
+    "calories": 180,
+    "color": "#b7b583",
+    "logo": "peanuts",
+    "standard_amount": "120g",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "33",
+    "name": "油揚げ",
+    "type": "豆類",
+    "calories": 77,
+    "color": "#b7b583",
+    "logo": "peanuts",
+    "standard_amount": "20g",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "34",
+    "name": "高野豆腐",
+    "type": "豆類",
+    "calories": 85,
+    "color": "#b7b583",
+    "logo": "peanuts",
+    "standard_amount": "１枚（16g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "35",
+    "name": "おから",
+    "type": "豆類",
+    "calories": 71,
+    "color": "#b7b583",
+    "logo": "peanuts",
+    "standard_amount": "１C（80g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "36",
+    "name": "湯葉（生）",
+    "type": "豆類",
+    "calories": 69,
+    "color": "#b7b583",
+    "logo": "peanuts",
+    "standard_amount": "１枚（30g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "37",
+    "name": "納豆",
+    "type": "豆類",
+    "calories": 100,
+    "color": "#b7b583",
+    "logo": "peanuts",
+    "standard_amount": "１パック（50g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "38",
+    "name": "豆乳",
+    "type": "豆類",
+    "calories": 92,
+    "color": "#b7b583",
+    "logo": "peanuts",
+    "standard_amount": "200ml（無調整）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "39",
+    "name": "きな粉",
+    "type": "豆類",
+    "calories": 35,
+    "color": "#b7b583",
+    "logo": "peanuts",
+    "standard_amount": "大さじ１（8g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "40",
+    "name": "うぐいす豆",
+    "type": "豆類",
+    "calories": 72,
+    "color": "#b7b583",
+    "logo": "peanuts",
+    "standard_amount": "30g",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "41",
+    "name": "金時豆",
+    "type": "豆類",
+    "calories": 71,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "30g",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "42",
+    "name": "あじ",
+    "type": "魚・魚加工品",
+    "calories": 82,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１尾（150g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "43",
+    "name": "いわし",
+    "type": "魚・魚加工品",
+    "calories": 136,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１尾（100g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "44",
+    "name": "さんま",
+    "type": "魚・魚加工品",
+    "calories": 310,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１尾（100g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "45",
+    "name": "あまだい",
+    "type": "魚・魚加工品",
+    "calories": 136,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１切（120g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "46",
+    "name": "かれい",
+    "type": "魚・魚加工品",
+    "calories": 95,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１切（100g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "47",
+    "name": "銀だら",
+    "type": "魚・魚加工品",
+    "calories": 264,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１切（120g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "48",
+    "name": "金目鯛",
+    "type": "魚・魚加工品",
+    "calories": 160,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１切（100g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "49",
+    "name": "さば",
+    "type": "魚・魚加工品",
+    "calories": 202,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１切（100g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "50",
+    "name": "さわら",
+    "type": "魚・魚加工品",
+    "calories": 177,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１切（100g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "51",
+    "name": "さけ",
+    "type": "魚・魚加工品",
+    "calories": 133,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１切（100g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "52",
+    "name": "ぶり",
+    "type": "魚・魚加工品",
+    "calories": 308,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１切（120g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "53",
+    "name": "すずき",
+    "type": "魚・魚加工品",
+    "calories": 123,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１切（100g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "54",
+    "name": "むつ",
+    "type": "魚・魚加工品",
+    "calories": 227,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１切（120g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "55",
+    "name": "まながつお",
+    "type": "魚・魚加工品",
+    "calories": 224,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１切（150g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "56",
+    "name": "ししゃも",
+    "type": "魚・魚加工品",
+    "calories": 41,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１尾（23g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "57",
+    "name": "あじ開き干し",
+    "type": "魚・魚加工品",
+    "calories": 99,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１尾（90g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "58",
+    "name": "さんま開き干し",
+    "type": "魚・魚加工品",
+    "calories": 230,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１尾（125g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "59",
+    "name": "ほっけ開き干し",
+    "type": "魚・魚加工品",
+    "calories": 298,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１尾（350g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "60",
+    "name": "しらす干し",
+    "type": "魚・魚加工品",
+    "calories": 7,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "大さじ１（6g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "61",
+    "name": "ちりめんじゃこ",
+    "type": "魚・魚加工品",
+    "calories": 12,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "大さじ１（6g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "62",
+    "name": "たらこ",
+    "type": "魚・魚加工品",
+    "calories": 49,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１腹（35g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "63",
+    "name": "辛子明太子",
+    "type": "魚・魚加工品",
+    "calories": 44,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１腹（35g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "64",
+    "name": "いくら",
+    "type": "魚・魚加工品",
+    "calories": 44,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "大さじ１（16g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "65",
+    "name": "ちくわ",
+    "type": "魚・魚加工品",
+    "calories": 36,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "小１本",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "66",
+    "name": "はんぺん",
+    "type": "魚・魚加工品",
+    "calories": 94,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１枚（100g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "67",
+    "name": "かまぼこ",
+    "type": "魚・魚加工品",
+    "calories": 19,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１切（20g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "68",
+    "name": "かに風味かまぼこ",
+    "type": "魚・魚加工品",
+    "calories": 11,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１本",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "69",
+    "name": "さつま揚げ",
+    "type": "魚・魚加工品",
+    "calories": 90,
+    "color": "#b7b583",
+    "logo": "fish",
+    "standard_amount": "１枚（65g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "70",
+    "name": "コーヒー",
+    "type": "嗜好飲料類",
+    "calories": 0,
+    "color": "#b7b583",
+    "logo": "bottle_of_water",
+    "standard_amount": "１杯",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "71",
+    "name": "紅茶",
+    "type": "嗜好飲料類",
+    "calories": 0,
+    "color": "#b7b583",
+    "logo": "bottle_of_water",
+    "standard_amount": "１杯",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "72",
+    "name": "ココア",
+    "type": "嗜好飲料類",
+    "calories": 120,
+    "color": "#b7b583",
+    "logo": "bottle_of_water",
+    "standard_amount": "１杯",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "73",
+    "name": "カフェオレ",
+    "type": "嗜好飲料類",
+    "calories": 80,
+    "color": "#b7b583",
+    "logo": "bottle_of_water",
+    "standard_amount": "１杯",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "74",
+    "name": "ジュース（天然果汁）",
+    "type": "嗜好飲料類",
+    "calories": 80,
+    "color": "#b7b583",
+    "logo": "bottle_of_water",
+    "standard_amount": "１杯（200ml）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "75",
+    "name": "コーラ",
+    "type": "嗜好飲料類",
+    "calories": 92,
+    "color": "#b7b583",
+    "logo": "bottle_of_water",
+    "standard_amount": "１杯（200ml）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "76",
+    "name": "ビール",
+    "type": "嗜好飲料類",
+    "calories": 200,
+    "color": "#b7b583",
+    "logo": "bottle_of_water",
+    "standard_amount": "中ビン（500ml）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "77",
+    "name": "発泡酒",
+    "type": "嗜好飲料類",
+    "calories": 90,
+    "color": "#b7b583",
+    "logo": "bottle_of_water",
+    "standard_amount": "コップ１杯（200ml）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "78",
+    "name": "赤ワイン",
+    "type": "嗜好飲料類",
+    "calories": 80,
+    "color": "#b7b583",
+    "logo": "bottle_of_water",
+    "standard_amount": "110ml",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "79",
+    "name": "白ワイン",
+    "type": "嗜好飲料類",
+    "calories": 80,
+    "color": "#b7b583",
+    "logo": "bottle_of_water",
+    "standard_amount": "110ml",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "80",
+    "name": "みかん",
+    "type": "果物",
+    "calories": 37,
+    "color": "#b7b583",
+    "logo": "banana",
+    "standard_amount": "１個（100g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "81",
+    "name": "オレンジ",
+    "type": "果物",
+    "calories": 47,
+    "color": "#b7b583",
+    "logo": "banana",
+    "standard_amount": "１個（200g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "82",
+    "name": "レモン",
+    "type": "果物",
+    "calories": 24,
+    "color": "#b7b583",
+    "logo": "banana",
+    "standard_amount": "１個（100g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "83",
+    "name": "さくらんぼ",
+    "type": "果物",
+    "calories": 30,
+    "color": "#b7b583",
+    "logo": "banana",
+    "standard_amount": "10 粒",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "84",
+    "name": "キウイフルーツ",
+    "type": "果物",
+    "calories": 45,
+    "color": "#b7b583",
+    "logo": "banana",
+    "standard_amount": "１個（100g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "85",
+    "name": "桃",
+    "type": "果物",
+    "calories": 68,
+    "color": "#b7b583",
+    "logo": "banana",
+    "standard_amount": "１個（200g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "86",
+    "name": "バナナ",
+    "type": "果物",
+    "calories": 77,
+    "color": "#b7b583",
+    "logo": "banana",
+    "standard_amount": "１本（150g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "87",
+    "name": "いちご",
+    "type": "果物",
+    "calories": 25,
+    "color": "#b7b583",
+    "logo": "banana",
+    "standard_amount": "５粒（75g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "88",
+    "name": "りんご",
+    "type": "果物",
+    "calories": 115,
+    "color": "#b7b583",
+    "logo": "banana",
+    "standard_amount": "中１個（250g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "89",
+    "name": "すいか",
+    "type": "果物",
+    "calories": 89,
+    "color": "#b7b583",
+    "logo": "banana",
+    "standard_amount": "1/8 切（400g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "90",
+    "name": "メロン",
+    "type": "果物",
+    "calories": 52,
+    "color": "#b7b583",
+    "logo": "banana",
+    "standard_amount": "1/2 個（250g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "91",
+    "name": "鶏卵（M）",
+    "type": "卵・乳製品",
+    "calories": 77,
+    "color": "#b7b583",
+    "logo": "eggs",
+    "standard_amount": "１個",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "92",
+    "name": "鶏卵（L）",
+    "type": "卵・乳製品",
+    "calories": 90,
+    "color": "#b7b583",
+    "logo": "eggs",
+    "standard_amount": "１個",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "93",
+    "name": "うずら卵",
+    "type": "卵・乳製品",
+    "calories": 15,
+    "color": "#b7b583",
+    "logo": "eggs",
+    "standard_amount": "１個",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "94",
+    "name": "普通牛乳",
+    "type": "卵・乳製品",
+    "calories": 141,
+    "color": "#b7b583",
+    "logo": "eggs",
+    "standard_amount": "200ml",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "95",
+    "name": "加工乳（低脂肪）",
+    "type": "卵・乳製品",
+    "calories": 97,
+    "color": "#b7b583",
+    "logo": "eggs",
+    "standard_amount": "200ml",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "96",
+    "name": "加工乳（濃厚）",
+    "type": "卵・乳製品",
+    "calories": 153,
+    "color": "#b7b583",
+    "logo": "eggs",
+    "standard_amount": "200ml",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "97",
+    "name": "ヨーグルト（加糖）",
+    "type": "卵・乳製品",
+    "calories": 77,
+    "color": "#b7b583",
+    "logo": "eggs",
+    "standard_amount": "100g",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "98",
+    "name": "ヨーグルト（無糖）",
+    "type": "卵・乳製品",
+    "calories": 62,
+    "color": "#b7b583",
+    "logo": "eggs",
+    "standard_amount": "100g",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "99",
+    "name": "プロセスチーズ",
+    "type": "卵・乳製品",
+    "calories": 80,
+    "color": "#b7b583",
+    "logo": "eggs",
+    "standard_amount": "20g",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "100",
+    "name": "カマンベールチーズ",
+    "type": "卵・乳製品",
+    "calories": 62,
+    "color": "#b7b583",
+    "logo": "eggs",
+    "standard_amount": "20g",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "101",
+    "name": "ショートケーキ",
+    "type": "お菓子",
+    "calories": 344,
+    "color": "#b7b583",
+    "logo": "birthday_cake",
+    "standard_amount": "１個",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "102",
+    "name": "チョコレートケーキ",
+    "type": "お菓子",
+    "calories": 310,
+    "color": "#b7b583",
+    "logo": "birthday_cake",
+    "standard_amount": "１個",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "103",
+    "name": "チーズケーキ",
+    "type": "お菓子",
+    "calories": 260,
+    "color": "#b7b583",
+    "logo": "birthday_cake",
+    "standard_amount": "１個",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "104",
+    "name": "モンブラン",
+    "type": "お菓子",
+    "calories": 300,
+    "color": "#b7b583",
+    "logo": "birthday_cake",
+    "standard_amount": "１個",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "105",
+    "name": "アップルパイ",
+    "type": "お菓子",
+    "calories": 304,
+    "color": "#b7b583",
+    "logo": "birthday_cake",
+    "standard_amount": "１切（100g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "106",
+    "name": "マドレーヌ",
+    "type": "お菓子",
+    "calories": 110,
+    "color": "#b7b583",
+    "logo": "birthday_cake",
+    "standard_amount": "１個",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "107",
+    "name": "バームクーヘン",
+    "type": "お菓子",
+    "calories": 370,
+    "color": "#b7b583",
+    "logo": "birthday_cake",
+    "standard_amount": "100g（直径 10cm）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "108",
+    "name": "シュークリーム",
+    "type": "お菓子",
+    "calories": 290,
+    "color": "#b7b583",
+    "logo": "birthday_cake",
+    "standard_amount": "１個",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "109",
+    "name": "チョコレート",
+    "type": "お菓子",
+    "calories": 20,
+    "color": "#b7b583",
+    "logo": "birthday_cake",
+    "standard_amount": "１かけ",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "110",
+    "name": "大福",
+    "type": "お菓子",
+    "calories": 118,
+    "color": "#b7b583",
+    "logo": "birthday_cake",
+    "standard_amount": "１個（50g）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "111",
+    "name": "牛もも肉",
+    "type": "肉・肉加工品",
+    "calories": 209,
+    "color": "#b7b583",
+    "logo": "rack_of_lamb",
+    "standard_amount": "100g",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "112",
+    "name": "牛バラ肉",
+    "type": "肉・肉加工品",
+    "calories": 454,
+    "color": "#b7b583",
+    "logo": "rack_of_lamb",
+    "standard_amount": "100g",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "113",
+    "name": "豚肩ロース肉",
+    "type": "肉・肉加工品",
+    "calories": 253,
+    "color": "#b7b583",
+    "logo": "rack_of_lamb",
+    "standard_amount": "100g",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "114",
+    "name": "豚もも肉",
+    "type": "肉・肉加工品",
+    "calories": 183,
+    "color": "#b7b583",
+    "logo": "rack_of_lamb",
+    "standard_amount": "100g",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "115",
+    "name": "鶏もも肉（皮付き）",
+    "type": "肉・肉加工品",
+    "calories": 200,
+    "color": "#b7b583",
+    "logo": "rack_of_lamb",
+    "standard_amount": "100g",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "116",
+    "name": "鶏むね肉（皮付き）",
+    "type": "肉・肉加工品",
+    "calories": 191,
+    "color": "#b7b583",
+    "logo": "rack_of_lamb",
+    "standard_amount": "100g",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "117",
+    "name": "鶏ささ身",
+    "type": "肉・肉加工品",
+    "calories": 105,
+    "color": "#b7b583",
+    "logo": "rack_of_lamb",
+    "standard_amount": "100g",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "118",
+    "name": "合びき肉",
+    "type": "肉・肉加工品",
+    "calories": 111,
+    "color": "#b7b583",
+    "logo": "rack_of_lamb",
+    "standard_amount": "50g（卵大ひとかたまり）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "119",
+    "name": "ロースハム",
+    "type": "肉・肉加工品",
+    "calories": 29,
+    "color": "#b7b583",
+    "logo": "rack_of_lamb",
+    "standard_amount": "１本（15ｇ）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "120",
+    "name": "ボンレスハム",
+    "type": "肉・肉加工品",
+    "calories": 18,
+    "color": "#b7b583",
+    "logo": "rack_of_lamb",
+    "standard_amount": "１本（15ｇ）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "121",
+    "name": "",
+    "type": "肉・肉加工品",
+    "calories": 64,
+    "color": "#b7b583",
+    "logo": "rack_of_lamb",
+    "standard_amount": "１本（20ｇ）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
+  },
+  {
+    "id": "122",
+    "name": "",
+    "type": "肉・肉加工品",
+    "calories": 81,
+    "color": "#b7b583",
+    "logo": "rack_of_lamb",
+    "standard_amount": "１本（20ｇ）",
+    "keywords": ["keyword-1", "keyword-2", "keyword-3"]
   }
-
 ]
